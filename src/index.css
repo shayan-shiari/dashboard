@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark-table tr:nth-child(even) {
+    background-color: rgb(51, 65, 85);
+}
+
+.light-table tr:nth-child(odd) {
+    background-color: #fff;
+}
