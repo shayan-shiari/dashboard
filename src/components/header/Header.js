@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const Header = () => {
-  const [theme, setTheme] = useState(false);
+  const [theme, setTheme] = useState(true);
 
   useEffect(() => {
     switch (theme) {
