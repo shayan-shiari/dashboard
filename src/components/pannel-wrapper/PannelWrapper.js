@@ -7,9 +7,9 @@ const PannelWrapper = ({ children }) => {
   return (
     <>
       <Header />
-      <div className="flex">
+      <div className="flex items-start">
         <Aside />
-        <div className="w-9/12 mx-auto bg-white dark:bg-slate-700">
+        <div className="w-9/12 ml-60 bg-white dark:bg-slate-700">
           {children}
         </div>
       </div>

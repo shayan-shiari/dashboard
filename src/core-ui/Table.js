@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Table = ({ theadData, tbodyData,title,modal }) => {
+const Table = ({ theadData, tbodyData, title, modal, open }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div>
       <div className="flex justify-between p-5 border-b-2 border-indigo-500">
         <span className="text-black dark:text-white">{title}</span>
-        <button className="bg-sky-500 dark:dark:text-sky-600 p-1 rounded-md text-white">
+        <button
+          onClick={() => open(true)}
+          className="bg-sky-500 dark:dark:text-sky-600 p-1 rounded-md text-white"
+        >
           {modal}
         </button>
       </div>
